@@ -25,6 +25,7 @@ import org.apache.tomcat.util.net.SocketEvent;
  * @author Remy Maucherat
  * @see ProtocolHandler
  */
+//适配器模式，Connector传入Tomcat Request/Response，Adapter转化为Servlet Request/Response
 public interface Adapter {
 
     /**

@@ -36,6 +36,7 @@ import java.util.Set;
  * @author Craig R. McClanahan
  * @author Peter Donald
  */
+//责任链模式，把Valve组织成链表
 public interface Pipeline extends Contained {
 
     /**

@@ -37,6 +37,7 @@ import org.apache.catalina.connector.Response;
  * @author Gunnar Rjnning
  * @author Peter Donald
  */
+//责任链模式，Valve表示单个处理点
 public interface Valve {
 
 

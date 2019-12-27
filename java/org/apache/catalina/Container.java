@@ -76,6 +76,7 @@ import org.apache.juli.logging.Log;
  * @author Craig R. McClanahan
  * @author Remy Maucherat
  */
+//使用组合模式形成父子结构
 public interface Container extends Lifecycle {
 
 

@@ -18,6 +18,8 @@ package org.apache.tomcat.util.net;
 
 import java.util.Objects;
 
+//Acceptor接收到Socket连接后会构造SocketProcessor交给线程池来处理
+//逻辑比较简单，直接调用子类的doRun方法
 public abstract class SocketProcessorBase<S> implements Runnable {
 
     protected SocketWrapperBase<S> socketWrapper;

@@ -80,6 +80,10 @@ package org.apache.catalina;
  *
  * @author Craig R. McClanahan
  */
+
+
+//对外开放的接口，一般都会声明抛出CheckedException
+//包含4个生命周期方法
 public interface Lifecycle {
 
 

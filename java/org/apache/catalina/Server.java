@@ -47,6 +47,10 @@ import org.apache.catalina.startup.Catalina;
  *
  * @author Craig R. McClanahan
  */
+
+
+//顶层组件，包含大量getter和setter，方法没有声明抛出异常
+//由生命周期方法触发和调用
 public interface Server extends Lifecycle {
 
     // ------------------------------------------------------------- Properties

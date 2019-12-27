@@ -60,6 +60,7 @@ public class LimitLatch {
     private final Sync sync;
     private final AtomicLong count;
     private volatile long limit;
+    //值为true时则放开限制，允许等待和后续的所有请求
     private volatile boolean released = false;
 
     /**
@@ -67,7 +68,9 @@ public class LimitLatch {
      * @param limit - maximum number of concurrent acquisitions of this latch
      */
     public LimitLatch(long limit) {
+        //并发上限，没有用final修饰，可以修改
         this.limit = limit;
+        //当前并发数
         this.count = new AtomicLong(0);
         this.sync = new Sync();
     }

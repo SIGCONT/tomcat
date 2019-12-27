@@ -45,6 +45,7 @@ import org.apache.tomcat.util.res.StringManager;
  *
  * @author Remy Maucherat
  */
+//Mapper组件用于定位请求对应的Servlet
 public final class Mapper {
 
 
